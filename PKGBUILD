@@ -52,7 +52,6 @@ prepare() {
   msg2 "Setting config..."
   cp ../config .config
   make olddefconfig
-  make localmodconfig
 
   make -s kernelrelease > version
   msg2 "Prepared %s version %s" "$pkgbase" "$(<version)"
