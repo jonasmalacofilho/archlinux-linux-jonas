@@ -16,7 +16,8 @@ makedepends=(
 options=('!strip')
 _srcname=zen-kernel
 source=(
-  "$_srcname::git+https://github.com/zen-kernel/zen-kernel?signed#tag=$_srctag"
+  # "$_srcname::git+https://github.com/zen-kernel/zen-kernel?signed#tag=$_srctag"
+  "$_srcname::git+file:///home/jonas/Code/linux/.git#tag=$_srctag"
   config         # the main kernel config file
 )
 validpgpkeys=(
@@ -25,7 +26,7 @@ validpgpkeys=(
   '8218F88849AAC522E94CF470A5E9288C4FA415FA'  # Jan Alexander Steffens (heftig)
 )
 sha256sums=('SKIP'
-            '3999fd28ac9587881701abcffb82a15e99ba85a7a4752f69da096653da081ee8')
+            'SKIP')
 
 export KBUILD_BUILD_HOST=archlinux
 export KBUILD_BUILD_USER=$pkgbase

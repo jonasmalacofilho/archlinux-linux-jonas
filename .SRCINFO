@@ -16,13 +16,13 @@ pkgbase = linux-jonas
 	makedepends = imagemagick
 	makedepends = git
 	options = !strip
-	source = zen-kernel::git+https://github.com/zen-kernel/zen-kernel?signed#tag=v5.3.13-zen1
+	source = zen-kernel::git+file:///home/jonas/Code/linux/.git#tag=v5.3.13-zen1
 	source = config
 	validpgpkeys = ABAF11C65A2970B130ABE3C479BE3E4300411886
 	validpgpkeys = 647F28654894E3BD457199BE38DBBDC86092693E
 	validpgpkeys = 8218F88849AAC522E94CF470A5E9288C4FA415FA
 	sha256sums = SKIP
-	sha256sums = 3999fd28ac9587881701abcffb82a15e99ba85a7a4752f69da096653da081ee8
+	sha256sums = SKIP
 
 pkgname = linux-jonas
 	pkgdesc = The Linux by Jonas for Jonas kernel and modules
