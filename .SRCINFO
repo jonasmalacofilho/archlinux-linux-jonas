@@ -1,0 +1,40 @@
+pkgbase = linux-jonas
+	pkgdesc = Linux by Jonas for Jonas
+	pkgver = 5.3.13.1
+	pkgrel = 1
+	url = https://github.com/zen-kernel/zen-kernel/commits/v5.3.13-zen1
+	arch = x86_64
+	license = GPL2
+	makedepends = xmlto
+	makedepends = kmod
+	makedepends = inetutils
+	makedepends = bc
+	makedepends = libelf
+	makedepends = python-sphinx
+	makedepends = python-sphinx_rtd_theme
+	makedepends = graphviz
+	makedepends = imagemagick
+	makedepends = git
+	options = !strip
+	source = zen-kernel::git+https://github.com/zen-kernel/zen-kernel?signed#tag=v5.3.13-zen1
+	source = config
+	validpgpkeys = ABAF11C65A2970B130ABE3C479BE3E4300411886
+	validpgpkeys = 647F28654894E3BD457199BE38DBBDC86092693E
+	validpgpkeys = 8218F88849AAC522E94CF470A5E9288C4FA415FA
+	sha256sums = SKIP
+	sha256sums = 3999fd28ac9587881701abcffb82a15e99ba85a7a4752f69da096653da081ee8
+
+pkgname = linux-jonas
+	pkgdesc = The Linux by Jonas for Jonas kernel and modules
+	depends = coreutils
+	depends = kmod
+	depends = initramfs
+	optdepends = crda: to set the correct wireless channels of your country
+	optdepends = linux-firmware: firmware images needed for some devices
+
+pkgname = linux-jonas-headers
+	pkgdesc = Headers and scripts for building modules for the Linux by Jonas for Jonas kernel
+
+pkgname = linux-jonas-docs
+	pkgdesc = Kernel hacker's manual for the Linux by Jonas for Jonas kernel
+
