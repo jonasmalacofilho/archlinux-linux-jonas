@@ -1,5 +1,5 @@
-# Maintainer: Jan Alexander Steffens (heftig) <jan.steffens@gmail.com>
-
+# Maintainer: Jonas Malaco (jonasmalacofilho) <jonas@protocubo.io>
+# Based on linux-zen
 pkgbase=linux-jonas
 pkgver=5.4.1.zen2
 pkgrel=1
@@ -16,6 +16,7 @@ makedepends=(
 options=('!strip')
 _srcname=zen-kernel
 source=(
+  # I already have a local linux repository, but the tags come from zen-kernel:
   # "$_srcname::git+https://github.com/zen-kernel/zen-kernel?signed#tag=$_srctag"
   "$_srcname::git+file:///home/jonas/Code/linux/.git#tag=$_srctag"
   config         # the main kernel config file

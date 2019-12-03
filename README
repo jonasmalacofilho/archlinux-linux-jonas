@@ -1,0 +1,8 @@
+Kernel configuration and PKGBUILD
+=================================
+
+For my personal desktop/laptop machines.  Optimized for:
+
+ * interactive/desktop
+ * my (current) hardware and use cases
+ * short kernel build time
