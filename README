@@ -6,3 +6,10 @@ For my personal desktop/laptop machines.  Optimized for:
  * interactive/desktop
  * my (current) hardware and use cases
  * short kernel build time
+
+Don't suffer, add/enable these flags on /etc/makepkg.conf:
+
+ * parallelize make (use SMT thread count + 1 jobs): MAKEFLAGS="-j13"
+ * use ZST compression when packaging (much faster than XZ): PKGEXT='.pkg.tar.zst'
+ * slightly prioritize compression time: COMPRESSZST=(zstd -c -T0 -z -18 -q -)
+ * warning: ZST requires recent pacman 5.2+
