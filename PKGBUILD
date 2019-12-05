@@ -1,7 +1,7 @@
 # Maintainer: Jonas Malaco (jonasmalacofilho) <jonas@protocubo.io>
 # Based on linux-zen
 pkgbase=linux-jonas
-pkgver=5.4.1.zen2
+pkgver=5.4.2.zen1
 pkgrel=1
 pkgdesc='Linux by Jonas for Jonas'
 _srctag=v${pkgver%.*}-${pkgver##*.}
